@@ -1,14 +1,14 @@
 ﻿Button & Pin assignment
-Top Button	  : Pin 13
-Left Button	  : Pin 11
-Bottom Button : Pin 16
-Right Button  : Pin 17
+Top Button	  : P9_13
+Left Button	  : P9_11
+Bottom Button : P9_16
+Right Button  : P9_17
 
 LED & Pin assignment
-Top LED    : Pin 14
-Left LED   : Pin 12
-Bottom LED : Pin 21
-Right LED  : Pin 22
+Top LED    : P9_14
+Left LED   : P9_12
+Bottom LED : P9_21
+Right LED  : P9_22
 
 Program Description
 

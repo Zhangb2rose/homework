@@ -1,9 +1,9 @@
 ﻿Button & Pin assignment
-Top Button	  : Pin 13
-Left Button	  : Pin 11
-Bottom Button : Pin 16
-Right Button  : Pin 17
-Reset Button  : Pin 42
+Top Button	  : P9_13
+Left Button	  : P9_11
+Bottom Button : P9_16
+Right Button  : P9_17
+Reset Button  : P9_42
 
 Program description: User should execute main.js among the 4 JavaScript files to run the program. The other files is for implementing scanf function with JavaScript. Once program is running, prompt will show up to let user to specify the size of grid. Then user can press Top, Left, Bottom or Right button to move cursor in the grid. The location where cursor passed, a "X" will show up. User can also press the Reset Button to clean the grid.
 
