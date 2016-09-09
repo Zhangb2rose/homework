@@ -47,7 +47,7 @@ b.attachInterrupt(buttondown, true, b.CHANGE, cursordown);
 
 function cursordown(a) {
     if (a.value === 1) {
-        screen[y][x] = '*';
+        screen[y][x] = 'X';
         y++;
         if (y >= yMax) {
             y = 0;
@@ -63,7 +63,7 @@ b.attachInterrupt(buttonleft, true, b.CHANGE, cursorleft);
 
 function cursorleft(a) {
     if (a.value === 1) {
-        screen[y][x] = '*';
+        screen[y][x] = 'X';
         x--;
         if (x < 0) {
             x = xMax - 1;
@@ -79,7 +79,7 @@ b.attachInterrupt(buttonright, true, b.CHANGE, cursorright);
 
 function cursorright(a) {
     if (a.value === 1) {
-        screen[y][x] = '*';
+        screen[y][x] = 'X';
         x++;
         if (x >= xMax) {
             x = 0;
@@ -95,7 +95,7 @@ b.attachInterrupt(buttonup, true, b.CHANGE, cursorup);
 
 function cursorup(a) {
     if (a.value === 1) {
-        screen[y][x] = '*';
+        screen[y][x] = 'X';
         y--;
         if (y < 0) {
             y = yMax - 1;
