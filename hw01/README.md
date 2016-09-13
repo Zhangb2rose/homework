@@ -15,4 +15,4 @@ Please resubmit.
 Grade:  2/10
 
 ==========
-I rewrite the code in javascript to make sure this program can also run on BeagleBone. 
+I rewrite the code in javascript to make sure this program can also run on BeagleBone. Please execute the main.js first.
