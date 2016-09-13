@@ -13,3 +13,6 @@ It's not responding to the arrow keys.
 Please resubmit.
 
 Grade:  2/10
+
+==========
+I rewrite the code in javascript to make sure this program can also run on BeagleBone. 
