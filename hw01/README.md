@@ -16,3 +16,9 @@ Grade:  2/10
 
 ==========
 I rewrite the code in javascript to make sure this program can also run on BeagleBone. Please execute the main.js first.
+
+==========
+Comments by Prof. Yoder
+Still not responding to the arrow keys, but works on Boyu's Bone.
+
+Grade:  10/10
