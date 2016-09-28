@@ -1,4 +1,5 @@
 GPIO via mmap
+
 Please use following command to compile C files
 cc -O3 -g  -o gpioThru gpioThru.c
 cc -O3 -g  -o gpioToggle gpioToggle.c
@@ -15,7 +16,7 @@ output: P9_21
 
 MatrixLED
 1. The connect() function of matrixLED.js send different messages to the bone. BoneServer.js listens socket 9090 for receiving messages. Once it receives any messages, it will perform according operations on the bone like shell commands.
-2. When an ìLEDî is clicked the LEDclick function will be called. Value in array disp[] will be updated and will be sent to the bone.
-3. The entry ìbackground-colorî in the class ìonî is used to color the LED.
-4. In my version of marixLED.js, I have two functions ìleftLEDclickî and ìrightLEDclickî which are similar to the function ìLEDclickî in the example marixLED.js file, but ìleftLEDclickî only turns on green LED while ìrightLEDclickî turns on red LED. In the html, I add ìonclick="leftLEDclick(' + i + ',' + j + ')" oncontextmenu="rightLEDclick(' + i + ',' + j + ')î;î to each ìLEDî block. When the user left clicks the block, green led will be turned on and when he right clicks the block, red led will be turned on. Disp[] and disp[]  will sent between bone and browser.
+2. When an ‚ÄúLED‚Äù is clicked the LEDclick function will be called. Value in array disp[] will be updated and will be sent to the bone.
+3. The entry ‚Äúbackground-color‚Äù in the class ‚Äúon‚Äù is used to color the LED.
+4. In my version of marixLED.js, I have two functions ‚ÄúleftLEDclick‚Äù and ‚ÄúrightLEDclick‚Äù which are similar to the function ‚ÄúLEDclick‚Äù in the example marixLED.js file, but ‚ÄúleftLEDclick‚Äù only turns on green LED while ‚ÄúrightLEDclick‚Äù turns on red LED. In the html, I add ‚Äúonclick="leftLEDclick(' + i + ',' + j + ')" oncontextmenu="rightLEDclick(' + i + ',' + j + ')‚Äù;‚Äù to each ‚ÄúLED‚Äù block. When the user left clicks the block, green led will be turned on and when he right clicks the block, red led will be turned on. Disp[] and disp[]  will sent between bone and browser.
 5. No need to change boneSever.js 
