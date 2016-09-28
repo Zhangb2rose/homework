@@ -1,7 +1,9 @@
 GPIO via mmap
 
 Please use following command to compile C files
+
 cc -O3 -g  -o gpioThru gpioThru.c
+
 cc -O3 -g  -o gpioToggle gpioToggle.c
 
 gpioThru
