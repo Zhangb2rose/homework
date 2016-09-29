@@ -6,9 +6,9 @@
 #include <signal.h>
 #include "beaglebone_gpio.h"
 
-int keepgoing = 1;
+int keepgoing = 1;// Set to 0 when ctrl-c is pressed
 void signal_handler(int sig);
-
+// Callback called when SIGINT is sent to the process (Ctrl-C)
 void signal_handler(int sig)
 {
 	printf( "\nCtrl-C pressed, cleaning up and exiting...\n" );
@@ -30,9 +30,11 @@ int main(int argc, char *argv[]) {
     
     unsigned int reg;
     unsigned int reg1;
+	// Set the signal callback for Ctrl-C
 	signal(SIGINT, signal_handler);
     int fd = open("/dev/mem", O_RDWR);
     printf("Mapping %X - %X (size: %X)\n", GPIO1_START_ADDR, GPIO1_END_ADDR, GPIO1_SIZE);
+	// map gpio1 register
     gpio1_addr = mmap(0, GPIO1_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, fd, GPIO1_START_ADDR);
 
     gpio1_oe_addr           = gpio1_addr + GPIO_OE;
@@ -61,12 +63,16 @@ int main(int argc, char *argv[]) {
         printf("Unable to map GPIO0\n");
         exit(1);
     }
+	//map gpio0 register
     printf("GPIO0 mapped to %p\n", gpio0_addr);
     printf("GPIO0 OE mapped to %p\n", gpio0_oe_addr);
     printf("GPIO0 SETDATAOUTADDR mapped to %p\n", gpio0_setdataout_addr);
     printf("GPIO0 CLEARDATAOUT mapped to %p\n", gpio0_cleardataout_addr);
     printf("GPIO0 DATAIN mapped to %p\n", gpio0_datain_addr);
-    reg = *gpio1_oe_addr;
+    
+	
+	//make GPIO_60 AND GPIO_48 output
+	reg = *gpio1_oe_addr;
     printf("GPIO1 configuration: %X\n", reg);
     reg &= ~GPIO_60;
     reg &= ~GPIO_48;

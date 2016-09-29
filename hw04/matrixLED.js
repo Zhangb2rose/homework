@@ -33,7 +33,7 @@
 
 
 
-    // Send one column when LED is clicked.
+    // Send one column to correspond green led location when LED is clicked.
     function greenLEDclick(i, j) {
         //	alert(i+","+j+" clicked");
         disp[i] ^= 0x1 << j;
@@ -67,7 +67,7 @@
             }
         }
     }
-
+// Send one column to correspond red led location when LED is clicked.
     function redLEDclick(i, j) {
         //	alert(i+","+j+" clicked");
         disp[i] ^= 0x1 << j;
