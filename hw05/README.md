@@ -1,4 +1,4 @@
-﻿1. Make
+1. Make
 makefile “Makefile” is included in the repo 
 
 2. Installing the Kernel Source
@@ -20,3 +20,10 @@ This address (0x2102c) is in our data section
 4. Pushing to the Cloud
 Include “keys_tmp101.json”, “plotTMP101.html” and “tmp101.js” in the repo.
 Have demoed to Professor Yoder.
+
+==========
+Prof. Yoder's comments
+Looks good and complete.
+Did you get the new kernel to run on your Bone?
+
+Grade:  10/10
