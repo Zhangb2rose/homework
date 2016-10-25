@@ -1,0 +1,1 @@
+cmd_/var/lib/cloud9/exploringBB/extras/kernel/gpio_test/gpio_test.ko := ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /var/lib/cloud9/exploringBB/extras/kernel/gpio_test/gpio_test.ko /var/lib/cloud9/exploringBB/extras/kernel/gpio_test/gpio_test.o /var/lib/cloud9/exploringBB/extras/kernel/gpio_test/gpio_test.mod.o
