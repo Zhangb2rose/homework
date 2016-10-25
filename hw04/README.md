@@ -22,3 +22,10 @@ MatrixLED
 3. The entry “background-color” in the class “on” is used to color the LED.
 4. In my version of marixLED.js, I have two functions “leftLEDclick” and “rightLEDclick” which are similar to the function “LEDclick” in the example marixLED.js file, but “leftLEDclick” only turns on green LED while “rightLEDclick” turns on red LED. In the html, I add “onclick="leftLEDclick(' + i + ',' + j + ')" oncontextmenu="rightLEDclick(' + i + ',' + j + ')”;” to each “LED” block. When the user left clicks the block, green led will be turned on and when he right clicks the block, red led will be turned on. Disp[] and disp[]  will sent between bone and browser.
 5. No need to change boneSever.js 
+
+==========
+Prof. Yoder's comments
+I don't see the Memory Map like figure 2-5.
+Otherwise it looks good.
+
+Grade:  9/10
